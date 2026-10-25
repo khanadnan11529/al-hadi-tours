@@ -1,0 +1,9 @@
+
+/backend/tours/src/main/resources/application.properties
+**/application.properties
+.env
+.env.*
+!.env.example
+**/target/
+**/node_modules/
+**/dist/

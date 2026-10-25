@@ -1,0 +1,242 @@
+.featured-offer {
+    width: 100%;
+    padding: 110px 0;
+    background: #f8f5ed;
+}
+
+.featured-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================
+   POSTER
+========================= */
+
+.featured-image {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-image img {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(16, 41, 75, 0.18);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.featured-content {
+    max-width: 650px;
+}
+
+.featured-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #c79625;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.featured-content h2 {
+    margin-bottom: 22px;
+    color: #10294b;
+    font-size: 48px;
+    line-height: 1.12;
+}
+
+.featured-content h2 strong {
+    color: #c79625;
+}
+
+.featured-description {
+    margin-bottom: 32px;
+    color: #626b77;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.offer-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #eee4d0;
+    border-radius: 7px;
+}
+
+.offer-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f1df;
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.offer-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #10294b;
+    font-size: 15px;
+}
+
+.offer-item p {
+    margin: 0;
+    color: #7b828b;
+    font-size: 12px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.offer-price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.offer-price span {
+    color: #727984;
+    font-size: 14px;
+}
+
+.offer-price strong {
+    color: #10294b;
+    font-size: 34px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.offer-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.offer-primary-btn,
+.offer-call-btn {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.offer-primary-btn {
+    background: #c79625;
+    color: #ffffff;
+}
+
+.offer-primary-btn:hover {
+    background: #a87915;
+    transform: translateY(-2px);
+}
+
+.offer-call-btn {
+    border: 1px solid #10294b;
+    color: #10294b;
+    background: transparent;
+}
+
+.offer-call-btn:hover {
+    background: #10294b;
+    color: #ffffff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+    .featured-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        max-width: 700px;
+    }
+    .featured-image img {
+        max-width: 500px;
+    }
+    .featured-content {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .featured-offer {
+        padding: 70px 0;
+    }
+    .featured-container {
+        width: 92%;
+        gap: 35px;
+    }
+    .featured-content h2 {
+        font-size: 35px;
+    }
+    .featured-description {
+        font-size: 15px;
+    }
+    .offer-highlights {
+        grid-template-columns: 1fr;
+    }
+    .offer-price {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .offer-price strong {
+        font-size: 30px;
+    }
+    .offer-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .offer-primary-btn,
+    .offer-call-btn {
+        width: 100%;
+    }
+}

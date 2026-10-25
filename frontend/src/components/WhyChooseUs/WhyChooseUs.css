@@ -1,0 +1,141 @@
+.why-section {
+    width: 100%;
+    padding: 110px 0;
+    background: #ffffff;
+}
+
+.why-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.why-heading {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.why-heading>span {
+    color: #c79625;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.why-heading h2 {
+    margin: 12px 0 15px;
+    color: #10294b;
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.why-heading h2 strong {
+    color: #c79625;
+}
+
+.why-heading p {
+    color: #6d7480;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    position: relative;
+    padding: 35px 28px;
+    background: #f8f5ed;
+    border: 1px solid #eee4d0;
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    background: #10294b;
+    border-color: #10294b;
+}
+
+.why-number {
+    color: #c79625;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.why-line {
+    width: 35px;
+    height: 2px;
+    margin: 20px 0;
+    background: #c79625;
+}
+
+.why-card h3 {
+    margin-bottom: 12px;
+    color: #10294b;
+    font-size: 19px;
+}
+
+.why-card p {
+    color: #6d7480;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.why-card:hover h3 {
+    color: #ffffff;
+}
+
+.why-card:hover p {
+    color: #dce2e9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .why-section {
+        padding: 75px 0;
+    }
+    .why-container {
+        width: 92%;
+    }
+    .why-heading {
+        margin-bottom: 40px;
+    }
+    .why-heading h2 {
+        font-size: 34px;
+    }
+    .why-heading p {
+        font-size: 15px;
+    }
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .why-card {
+        padding: 30px 25px;
+    }
+}
